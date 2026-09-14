@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Demo Menu — Webulpa</title><link rel="stylesheet" href="css/style.css">
+</head>
+<body class="demo-page">
+<header class="navbar"><div class="container nav-inner"><a class="brand" href="index.html"><span class="brand-mark">W</span>webulpa</a><a class="btn btn-primary" href="index.html">← Kembali</a></div></header>
+<main class="demo-main">
+  <div class="demo-wrap">
+    <div class="demo-intro"><span class="section-label">DEMO MENU DIGITAL</span><h1>Warung Makan Nusantara</h1><p>Meja 08 · Silakan pilih menu favorit kamu.</p></div>
+    <div class="demo-layout">
+      <div class="menu-panel">
+        <div class="demo-search"><span>⌕</span><input id="search" placeholder="Cari menu..."></div>
+        <div class="demo-tabs"><button class="active" data-cat="Semua">Semua</button><button data-cat="Makanan">Makanan</button><button data-cat="Minuman">Minuman</button><button data-cat="Snack">Snack</button></div>
+        <div class="demo-items" id="menuItems"></div>
+      </div>
+      <aside class="order-panel">
+        <div class="order-head"><h2>Pesanan Kamu</h2><span id="count">0</span></div>
+        <div id="cartEmpty" class="cart-empty">🛒<b>Keranjang masih kosong</b><small>Pilih menu untuk mulai memesan.</small></div>
+        <div id="cartList" class="cart-list"></div>
+        <div class="order-total"><span>Total</span><b id="total">Rp0</b></div>
+        <button class="btn btn-primary checkout" id="checkout">Kirim Pesanan</button>
+      </aside>
+    </div>
+  </div>
+</main>
+<div class="toast" id="toast"></div>
+<script src="js/demo.js"></script>
+</body>
+</html>
